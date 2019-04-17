@@ -1,0 +1,15 @@
+.scroll-bar {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.scroll-bar div{
+    width: 200px;
+    height: 300px;
+    margin: 20px 0;
+    border: 1px solid red;
+    overflow-y: auto;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
