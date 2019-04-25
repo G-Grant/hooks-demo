@@ -4,7 +4,6 @@ import OldScrollBar from './old.jsx';
 import NewScrollBar from './new.jsx';
 
 class ScrollBar extends PureComponent {
-
     render() {
         return (
             <div>

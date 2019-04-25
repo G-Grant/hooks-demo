@@ -3,13 +3,13 @@ import LeftContainer from './left/old.jsx';
 import RightContainer from './right/old.jsx';
 import './index.css';
 
-export default function NewScrollBar(){
+export default function NewScrollBar() {
     const [scrollTop, setScrollTop] = useState(0);
-    function onScroll(e){
+    function onScroll(e) {
         let { scrollTop } = e.target;
         setScrollTop(scrollTop);
     }
-    return(
+    return (
         <div className="scroll-bar">
             <LeftContainer scrollTop={scrollTop} onScroll={onScroll} />
             <RightContainer scrollTop={scrollTop} onScroll={onScroll} />
