@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import ScrollBar from './scrollBar/index.jsx';
-import Demo from './demo/index.jsx';
+import ScrollBarComponent from './scrollBar/index.jsx';
+import EventEmitterComponent from './eventEmitter/index.jsx';
+
 
 import './App.css';
 
@@ -10,8 +11,8 @@ class App extends PureComponent {
     render() {
         return (
             <Router className="app">
-                <Route exact path="/scrollBar" component={ScrollBar} />
-                <Route exact path="/demo" component={Demo} />
+                <Route path="/eventEmitter" component={EventEmitterComponent} />
+                <Route path="/scrollBar" component={ScrollBarComponent} />
             </Router>
         );
     }
